@@ -20,7 +20,7 @@ h2 {  text-align: center; background: #ddd; }
 .label {font-weight: bold;}
 .content { text-align: justify; }
 
-@media screen 
+@media screen
 {
     body { font: 80% verdana,helvetica,sans-serif; }
     h1 { margin: 1em 0 1em 1em; font-size: 1.5em; }
@@ -33,7 +33,7 @@ h2 {  text-align: center; background: #ddd; }
 
     .label { clear: left;  float: left; margin: 1em 0 0 0; width: 30%; font-weight: bold; }
     .content { float: left; margin: 1em 0 0 0; width: 70%; }
-    ul { float: left; width: 65%; margin: 0 0 0 32%; background: #fff; 
+    ul { float: left; width: 65%; margin: 0 0 0 32%; background: #fff;
         display: inline; /* IE Hack for double-float-margin bug */ }
 
     .note { width: 700px; clear: both; padding-top: 2em; }
@@ -43,7 +43,7 @@ h2 {  text-align: center; background: #ddd; }
     a:focus:hover { background: yellow; }
 }
 
-@media print 
+@media print
 {
     body: { font: 10pt georgia, serif; text-align: left;}
     h1 { margin: 1cm 0; font-size: 18pt; }
@@ -73,13 +73,13 @@ h2 {  text-align: center; background: #ddd; }
 
 
 <p class="notes">
-ultimo aggiornamento: 8/12/2012<br />
+ultimo aggiornamento: 7/3/2015<br />
 La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="http://cv.lorello.it" title="attiva il link per aprire il CV aggiornato">sito personale</a></p>
 
 <p class="notes">
 <a href="http://it.linkedin.com/in/lorello" >
-            <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25_it_IT.png?locale=null" width="160" height="25" border="0" alt="Visualizza il profilo di Lorenzo  Salvadorini su LinkedIn">
-                </a>
+  <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25_it_IT.png?locale=null" width="160" height="25" border="0" alt="Visualizza il profilo di Lorenzo Salvadorini su LinkedIn">
+</a>
 </p>
 
 
@@ -106,13 +106,19 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">coniugato</p>
 
     <p class="label">Posizione militare</p>
-    <p class="content">svolto servizio civile in qualit&agrave; di obiettore di coscienza presso la Comunit&agrave; Aperta Pisana (Lari, Pisa) </p>
+    <p class="content">svolto servizio civile in qualit&agrave; di obiettore di
+      coscienza presso la Comunit&agrave; Aperta Pisana (Lari, Pisa)
+    </p>
 
     <p class="label">Patente</p>
     <p class="content">Patente B</p>
 
     <p class="label">Recapiti</p>
-    <p class="content">Email / GTalk: <a href="mailto:lorello&#64;openweb.it" title="Attiva il collegamento per scrivermi">lorello&#64;openweb.it</a> * skype: <a href="skype:lorenzo.salvadorini?call">lorenzo.salvadorini</a>
+    <p class="content">
+      <a href="mailto:lorello&#64;openweb.it" title="Attiva il collegamento per scrivermi">lorello&#64;openweb.it</a> *
+      <a href="https://github.com/lorello" title="La mia attività pubblica su GitHub">github.com/lorello</a> *
+      <a href="https://twitter.com/lorello" title="La mia attività pubblica su Twitter">twitter.com/lorello</a> *
+      <a href="http://about.me/lorello" title="La mia homepage personale">about.me/lorello</a>
     </p>
 
    </div>
@@ -121,10 +127,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 <div class="section">
 
+
 <h2>Esperienza lavorativa</h2>
-
-
-
 
 <div class="section-content">
 
@@ -143,7 +147,62 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Technology Infrastructure Manager</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Ho ricoperto il ruolo di Area Manager all'interno del gruppo Softec, coordinando l'Area Sistemi cresciuta da 1 a 7 elementi durante la mia attivi&agrave; di coordinamemto, sviluppando progetti in qualit&agrave; di System Architect e collaborando alla gestione dell'Ufficio Acquisti per l'area di mia competenza.</p>
+      <p class="content">Ho ricoperto il ruolo di Responsabile dell'Area Sistemi
+        all'interno del gruppo Softec, riportando direttamente al CEO e coordinando
+        il team dei sistemisti che io stesso ho costituito e che ha raggiunto 7
+        elementi durante la mia attivi&agrave;.<br />
+        <br />
+        Le principali attività di cui mi sono occupato:
+         <ul>
+           <li>
+             presa in carico di circa 20 rack di sistemi fisici gestiti in precedenza
+             dal team Sistemi della controllante Dada (2007);</li>
+           <li>
+             virtualizzazione massiva dei cluster applicativi presi in gestione (2008-2009);</li>
+           <li>
+             migrazione fisica dalle sale di Dada in BT Italia e Telecom Rozzano
+             nel datacenter di Telecom Bologna, garantendo la continuità di servizio
+             per tutti i sistemi ridondati.(2007-2009);</li>
+           <li>
+             outsourcing servizio interno di groupware realizzato con soluzione mista
+             exchange/zimbra a Google Apps for Work;</li>
+           <li>
+             introduzione di un sistema di trouble-ticketing e di gestione progetti
+             software basata su wiki.(2007);</li>
+           <li>
+             introduzione di <a href="https://puppetlabs.com/">Puppet</a> come strumento
+             di gestione dell'infrastruttura e successivamente per la realizzazione
+             degli ambienti di sviluppo personali con Vagrant (2009);</li>
+           <li>
+             realizzazione nuova infrastruttura ridondata di hosting per gli applicativi
+             dell'azienda, con self-provisioning da parte dei distinti team di sviluppo e
+             sistema di charge-back per la gestione dei costi di hosting
+             sulle commesse a ricavo dell'azienda.(2008-2010);</li>
+           <li>
+             progettazione e realizzazione di cluster in cloud con scalabilità automatica
+             in base al traffico in ingresso (2011);</li>
+           <li>
+             gestione del parco client dell'azienda, costituito da circa 150 postazioni
+             e circa 250 device mobili;</li>
+           <li>
+             progetto <a href="http://www.43folders.com/izero">Inbox Zero</a>: realizzazione
+             della intranet aziendale e formazione alla condivisione
+             dell'informazione per la riduzione del sovraccarico di email (2012);
+             </li>
+           <li>
+             progetto di integrazione delle tre sedi aziendali (Active Directory, Telefonia VoIP),
+             avviato nel 2013 a valle dell'acquisizione di due società, <a href="http://www.bbj.it">BBJ</a>
+             con sede a Milano e <a href="http://www.redation.it">Redation</a> con sede a Cascina (PI);</li>
+            <li>
+             impostazione del sistema di Gestione della Privacy aziendale in stretta
+             collaborazione con l'Ufficio Qualit&agrave;, l'area Commerciale
+             e tutte le aree tecniche, al fine di realizzare servizi <em>compliant
+             by design</em> (2014);</li>
+            <li>
+             progetto di migrazione dei servizi di base del datacenter (DNS, NTP, Apt-Cache, Nagios)
+             verso container <a href="http://www.docker.com">Docker</a> con deploy
+             basato su GIT (2014-2015);</li>
+         </ul>
     </div>
 
     <div class="item">
@@ -152,16 +211,20 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Marzo 2006 - Maggio 2007</p>
 
       <p class="label">Datore di lavoro</p>
-      <p class="content"><a href="http://www.softecspa.it" title="visita il sito">Softec SpA</a>, gruppo <a href="http://dada.dada.net" title="visita il sito">Dada</a></p>
+      <p class="content"><a href="http://www.softecspa.it" title="visita il sito">Softec SpA</a>,
+        gruppo <a href="http://www.dada.eu/it" title="visita il sito">Dada</a></p>
 
       <p class="label">Tipo di azienda o settore</p>
       <p class="content">Societ&agrave; di Servizi Internet</p>
 
       <p class="label">Tipo di impiego</p>
-      <p class="content">Senior Webdeveloper</p>
+      <p class="content">Webdeveloper</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Ho lavorato come sviluppatore senior su siti web di media e grande complessit&agrave;, elaborando e implementando sistemi per la gestione di contenuti e interfacce da/verso sistemi di terze parti.</p>
+      <p class="content">Ho lavorato come sviluppatore su siti web di media e grande
+        complessit&agrave; e portali editoriali di livello nazionale, implementando
+        sistemi per la gestione di contenuti e interfacce da/verso sistemi di terze parti.
+        </p>
     </div>
 
 
@@ -180,7 +243,10 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">IT e Project Manager</p>
 
     <p class="label">Principali mansioni e responsabilit&agrave;</p>
-    <p class="content">Ho lavorato nella divisione IT della cooperativa, divisione costituita nel 2003 su mia iniziativa. Mi sono occupato dello sviluppo di siti Internet per il terzo settore e per le PP.AA., offrendo soluzioni basate su tecnologie moderne e standard internazionali. Ho seguito completamente e sotto ogni aspetto il flusso di lavoro della divisione informatica (progettazione, ricerca fondi, sviluppo, gestione, amministrazione).<br />
+    <p class="content">Ho lavorato nella divisione IT della cooperativa, divisione costituita nel 2003 su mia iniziativa.
+      Mi sono occupato dello sviluppo di siti Internet per il terzo settore e per le PP.AA., offrendo soluzioni basate
+      su tecnologie moderne e standard internazionali. Ho seguito completamente e sotto ogni aspetto il flusso di
+      lavoro della divisione informatica (progettazione, ricerca fondi, sviluppo, gestione, amministrazione).<br />
        Principali realizzazioni:</p>
 	   <ul>
 		<li><a href="http://www.valderasociale.it" title="Link esterno al sito">ValderaSociale</a>, sito Internet dei servizi sociali della <a href="http://www.valderassociata.it">Valdera</a>.</li>
@@ -194,7 +260,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 		<li>(2003) <a href="http://www.equotoscana.org" title="Link esterno al sito">EquoToscana</a>, sito regionale delle Botteghe del Mondo, in collaborazione con la ONG Ucodep (Arezzo): realizzato con <span lang="en">PostNuke</span> e lo sviluppo di due moduli integrati per la gestione delle pagine dei punti vendita sul territorio e dei progetti di importazione diretta;</li>
 		<li>(2003) <a href="http://www.circolidistudio.it" title="Link esterno al sito del progetto">Circolando Insieme</a>, sito Internet del progetto omonimo della Provincia di Pisa, nell'ambito della formazione permanente agli adulti: oltre alla comunicazione sul sito, con notizie, newsletter e gallerie fotografiche, tramite il web avvengono anche tutte le attivit&agrave; di <span lang="en">backend</span> per lo svolgimento delle attivit&agrave;formative.</li>
 	   </ul>
-     
+
   </div>
 
 
@@ -213,7 +279,12 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Docente</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Corso introduttivo all'uso del computer: ho strutturato le lezioni in modo da riuscire a ricalcare, almeno in alcuni punti, la struttura dei corsi per il conseguimento del livello base ECDL: ho effettuato lezioni frontali, simulazioni ed esercitazioni sull'utilizzo dell'interfaccia grafica Windows e su alcuni applicativi di uso comune (Wordprocessor e Foglio di calcolo).</p>
+      <p class="content">Corso introduttivo all'uso del computer: ho strutturato
+        le lezioni in modo da riuscire a ricalcare, almeno in alcuni punti,
+        la struttura dei corsi per il conseguimento del livello base ECDL: ho
+        effettuato lezioni frontali, simulazioni ed esercitazioni sull'utilizzo
+        dell'interfaccia grafica Windows e su alcuni applicativi di uso comune
+        (Wordprocessor e Foglio di calcolo).</p>
     </div>
 
 
@@ -231,7 +302,10 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Consulente</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Realizzazione  di un corso sul Software Libero, durante il quale ho affrontato l'argomento sotto vari punti di vista (economico, sociale, tecnologico) e ipotizzando l'utilizzo del software libero in vari ambiti (uso casalingo, uso professionale, uso scolastico).</p>
+      <p class="content">Realizzazione  di un corso sul Software Libero, durante
+        il quale ho affrontato l'argomento sotto vari punti di vista (economico,
+        sociale, tecnologico) e ipotizzando l'utilizzo del software libero in
+        vari ambiti (uso casalingo, uso professionale, uso scolastico).</p>
     </div>
 
 
@@ -249,7 +323,11 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Consulente IT</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Progettazione e realizzazione della migrazione della rete interna da piattaforma Windows a piattaforma GNU/Linux. La migrazione ha coinvolto 7 macchine client gi&agrave; presenti, a cui sono state aggiunte 2 nuove postazioni: per i client &agrave; stata adottata la distribuzione SuSE Linux, per la macchina server la distribuzione RedHat.</p>
+      <p class="content">Progettazione e realizzazione della migrazione della
+        rete interna da piattaforma Windows a piattaforma GNU/Linux. La migrazione
+        ha coinvolto 7 macchine client gi&agrave; presenti, a cui sono state
+        aggiunte 2 nuove postazioni: per i client &agrave; stata adottata la
+        distribuzione SuSE Linux, per la macchina server la distribuzione RedHat.</p>
     </div>
 
 
@@ -268,7 +346,9 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Sviluppatore</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Collaborazione per la realizzazione di un corso di informatica per non vedenti, valido ai fini del conseguimento della certificazione ECDL</p>
+      <p class="content">Collaborazione per la realizzazione di un corso di
+        informatica per non vedenti, valido ai fini del conseguimento della
+        certificazione ECDL</p>
     </div>
 
 
@@ -287,7 +367,11 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Web Writer e Docente</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Collaborazione per la realizzazione del progetto &quot;Fare teatro&quot;, in collaborazione con il Teatro Verdi e le Scuole sedie superiori di Pisa. Ho curato i contenuti del sito Internet del progetto e ho effettuato lezioni con i ragazzi delle scuole per l'apprendimento del sistema editoriale (EzPublish).</p>
+      <p class="content">Collaborazione per la realizzazione del progetto
+        &quot;Fare teatro&quot;, in collaborazione con il Teatro Verdi e le
+        Scuole sedie superiori di Pisa. Ho curato i contenuti del sito Internet
+        del progetto e ho effettuato incontri con i ragazzi delle scuole per
+        l'apprendimento del sistema editoriale (EzPublish).</p>
     </div>
 
     <div class="item">
@@ -304,7 +388,9 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Web designer e consulente informatico</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Realizzione sito Internet, brochure informativa, redazione materiale didattico per il corso &quot;Economia sobria e solidale come economia equa e sostenibile&quot;</p>
+      <p class="content">Realizzione sito Internet, brochure informativa,
+        redazione materiale didattico per il corso &quot;Economia sobria e
+        solidale come economia equa e sostenibile&quot;</p>
     </div>
 
 
@@ -322,7 +408,9 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Web designer</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Collaborazione per la creazione del sito Internet del <a href="http://www.gruppofolgaretano.it" title="Collegamento esterno al sito">Gruppo Missionario Folgaretano</a>, con il sistema editoriale phpSlash.</p>
+      <p class="content">Collaborazione per la creazione del sito Internet
+        del <a href="#" title="Sito non disponibile">Gruppo Missionario Folgaretano</a>,
+        con il sistema editoriale phpSlash.</p>
     </div>
 
     <div class="item">
@@ -339,7 +427,11 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Socio lavoratore</p>
 
       <p class="label">Principali mansioni e responsabilit&agrave;</p>
-      <p class="content">Ho lavorato presso la segreteria della cooperativa, ricoprendo nel contempo l'incarico di segretario nel Consiglio di Amministrazione. Facevano parte delle mie mansioni la comunicazione con la base sociale, la gestione dei soci lavoratori, la convocazione di assemblee e consigli direttivi, il coordinamento delle attivit&agrave; di progettazione e il controllo di gestione.</p>
+      <p class="content">Ho lavorato presso la segreteria della cooperativa,
+        ricoprendo nel contempo l'incarico di segretario nel Consiglio di Amministrazione.
+        Facevano parte delle mie mansioni la comunicazione con la base sociale,
+        la gestione dei soci lavoratori, la convocazione di assemblee e consigli direttivi,
+        il coordinamento delle attivit&agrave; di progettazione e il controllo di gestione.</p>
     </div>
 
 </div><!--/section-content-->
@@ -409,15 +501,40 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <div class="item">
 
       <p class="label">&nbsp;</p>
-      <p class="content">Nel mio lavoro presso la Coop. Il Delfino ho gestito rapporti con la Pubblica Amministrazione, nostro principale committente, con i fornitori e con il personale della cooperativa.</p>
+      <p class="content">Nel mio lavoro presso Softec ho imparato a destreggiarmi
+        in realtà fortemente strutturate, ho imparato ad apprezzare gli aspetti
+        positivi delle personalità molto diverse dalla mia e ho avuto modo di gestire
+        momenti di grande stress, mantenendo l'attenzione del team sulla criticità
+        da risolvere e gestendo la frustrazione di chi si trova al contorno
+        senza un ruolo attivo.
+        </p>
+
 
       <p class="label">&nbsp;</p>
-      <p class="content">Nella mia attivit&agrave; di Web Designer e sviluppatore, sia da consulente che presso la Coop. Il Gabbiano, ho partecipato attivamente alla comunit&agrave; di sviluppatori di alcuni software opensource (Postnuke, PhPeace) ed ho realizzato diversi siti web all'interno di gruppi di lavoro geograficamente distributi, acquisendo capacit&agrave; di dialogo e interazione con strumenti di collaborazione online (<abbr title="Concurrent Versioning System">cvs</abbr>/subversion, wiki, chat, e-mail, voip)</p>
+      <p class="content">Nel mio lavoro presso la Coop. Il Delfino ho gestito
+        rapporti con la Pubblica Amministrazione, nostro principale committente,
+        con i fornitori e con il personale della cooperativa. Ho toccato con mano
+        quanto nel privato sociale il confine tra chi assiste e chi è assistito
+        può diventare labile e questo mi ha insegnato che tracciare confini è
+        molto difficile.
+        </p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Ho svolto numerose attivit&agrave; di volontariato in organizzazioni di livello locale e nazionale, partecipando a gruppi di lavoro e attivit&agrave; di e-campaigning e mediattivismo. Sono stato per due anni referente del nodo di Pisa di ReteLilliput, esperienza che ha accresciuto le mie capacit&agrave; di ascolto, analisi e sintesi. 
-      
-      </p>
+      <p class="content">Nella mia attivit&agrave; di Web Designer e sviluppatore,
+        sia da consulente che presso la Coop. Il Gabbiano, ho partecipato
+        attivamente alla comunit&agrave; di sviluppatori di alcuni software
+        opensource (Postnuke, PhPeace, Elgg) ed ho realizzato diversi siti web
+        all'interno di gruppi di lavoro geograficamente distributi, acquisendo
+        capacit&agrave; di dialogo e interazione con strumenti di collaborazione
+        online. Ho imparato che il lavoro da freelance può darmi grande libert&agrave;,
+        ma mi piace di più avere colleghi con cui fare strada.</p>
+
+      <p class="label">&nbsp;</p>
+      <p class="content">Ho svolto numerose attivit&agrave; di volontariato
+        in organizzazioni di livello locale e nazionale, partecipando a gruppi
+        di lavoro e attivit&agrave; di e-campaigning e mediattivismo. Sono stato
+        per due anni referente del nodo di Pisa di ReteLilliput, esperienza che
+        ha accresciuto le mie capacit&agrave; di ascolto, analisi e sintesi.</p>
     </div>
 
   </div>
@@ -438,17 +555,22 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <div class="item">
 
       <p class="label">&nbsp;</p>
-      <p class="content">Durante il lavoro nella Coop. Il Gabbiano mi sono occupato della gestione di tutti gli aspetti della &quot;divisione IT&quot;, curandone l'organizzazione, la gestione e la contabilit&agrave;. </p>
+      <p class="content">In Softec ho maturato la capacità di organizzare
+      attività a medio lungo termine: le molteplici migrazioni di datacenter
+      che ho organizzato hanno avuto una durata variabile tra 1 e 3 anni,
+      hanno richiesto una pianificazione importante, sia logistica che di
+      budget. Inoltre ho avuto modo di lavorare nell'Ufficio Qualità, potendo
+      dare un contributo sensibile ai processi aziendali che riguardano la
+      progettazione, il delivery e la gestione del servizio dei prodotti
+      aziendali.</p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Nel periodo in cui ho ricoperto la carica di Segretario presso la Coop. Il Delfino ho coordinato team di 4/6 persone per la realizzazione di progetti in ambito sociale e sanitario.</p>
-
-      <p class="label">&nbsp;</p>
-      <p class="content">Tra le attivit&agrave; che ho svolto nel campo del volontariato, ho partecipato dal 1991 al 2004 allo staff tecnico dell'iniziativa &quot;Accendi una stella, spegni la droga&quot;, una campagna di raccolta fondi per la Comunit&agrave; Aperta Pisana (Chianni, Pisa) che coinvolge un pool di oltre 150 volontari distribuiti sulle Province di Pisa, Livorno e Firenze</p>
-
-      <p class="label">&nbsp;</p>
-      <p class="content">Come socio dell'Associazione di volontariato telematico PeaceLink ho coordinato le attivit&agrave; redazionali dell'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a></p>
-
+      <p class="content">Tra le attivit&agrave; che ho svolto nel campo del
+        volontariato, ho partecipato dal 1991 al 2004 alla campagna di raccolta
+        fondi natalizia per la Comunit&agrave; Aperta Pisana (Chianni, Pisa).
+        Ho fatto parte del team di 4 persone che ha preparato la campagna e
+        coordinato il pool di oltre 150 volontari distribuiti sulle Province
+        di Pisa, Livorno e Firenze.</p>
     </div>
 
   </div><!--/section-content-->
@@ -485,7 +607,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <div class="item">
 
       <p class="label">Competenze sistemistiche</p>
-      <p class="content">esperienza nella realizzazione di sistemi in alta affidabilit&agrave; e atti a garantire alte performance (cluster fino a 16 nodi). Conoscenza dei sistemi di virtualizzazione di classe Enterprise basati su <a href="http://vmware.com/products/vi/" title="Visita il sito">Vmware</a> e <a href="http://www.xen.org/" title="Visita il sito">Xen</a>; 
+      <p class="content">esperienza nella realizzazione di sistemi in alta affidabilit&agrave; e atti a garantire alte performance (cluster fino a 16 nodi). Conoscenza dei sistemi di virtualizzazione di classe Enterprise basati su <a href="http://vmware.com/products/vi/" title="Visita il sito">Vmware</a> e <a href="http://www.xen.org/" title="Visita il sito">Xen</a>;
       esperienza nella progettazione di rete in datacenter con apparati <a href="http://www.cisco.com" title="Visita il sito">Cisco</a>; esperienza nell'utilizzo di storage di rete con tecnologia iSCSI.
       </p>
 
@@ -513,7 +635,15 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
     <div class="item">
       <p class="label">&nbsp;</p>
-      <p class="content">In occasione di alcuni progetti, in cui ho dovuto trattare una grande mole di dati, mi sono appassionato al tema dell'<a href="http://it.wikipedia.org/wiki/Architettura_dell'informazione" title="Leggi la definizione di Wikipedia"><strong lang="en">Information Architecture</strong></a>, al problema della classificazione e al <a href="http://it.wikipedia.org/wiki/Web_semantico" title="Leggi la definizione su Wikipedia"><strong lang="en">Semantic-Web</strong></a>. Sto approfondendo per questo l'uso delle <a href="http://it.wikipedia.org/wiki/Ontologia_(Informatica)" title="Leggi la definizione su Wikipedia">Ontologie</a> in ambito informatico soprattuto in rapporto alla recente diffusione di servizi di <strong lang="en">social networking</strong> basati sulle <strong lang="en">Folksonomies</strong>.<br />
+      <p class="content">In occasione di alcuni progetti, in cui ho dovuto trattare
+        una grande mole di dati, mi sono appassionato al tema
+        dell'<a href="http://it.wikipedia.org/wiki/Architettura_dell'informazione"
+        title="Leggi la definizione di Wikipedia"><strong lang="en">Information Architecture</strong></a>,
+        al problema della classificazione e al <a href="http://it.wikipedia.org/wiki/Web_semantico"
+        title="Leggi la definizione su Wikipedia"><strong lang="en">Semantic-Web</strong></a>.
+        Sto approfondendo per questo l'uso delle
+        <a href="http://it.wikipedia.org/wiki/Ontologia_(Informatica)" title="Leggi la definizione su Wikipedia">Ontologie</a>
+        in ambito informatico soprattuto in rapporto alla recente diffusione di servizi di <strong lang="en">social networking</strong> basati sulle <strong lang="en">Folksonomies</strong>.<br />
       Esperienza nell'adozione di <strong>software libero</strong> in sostituzione di software proprietario.<br />
       Partecipazione al <a href="http://salpa.pisa.it" title="Attiva il link per aprire il sito del convengno">Convegno nazionale Forum SALPA</a>, &quot;Sapere Aperto e Libero nella Pubblica Amministrazione&quot;, sull'adozione del software <span lang="en">OpenSource</span> nella Pubblica Amministrazione (Pisa, 22-23 Marzo 2004).<br />
       A seguito dell'esperienza maturata nel campo della virtualizzazione in datacenter, sto studiando le tecnologie di <a href="http://it.wikipedia.org/wiki/Cloud_computing" title="Leggi la definizione su Wikipedia">Cloud computing</a></p>
@@ -533,15 +663,38 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
     <div class="item">
       <p class="label">&nbsp;</p>
-      <p class="content">Dedico gran parte del mio tempo libero alle attivit&agrave; di volontariato in varie organizzazioni no-profit, in attivit&agrave; rivolte a situazioni di forte emarginazione sociale, carcere, senza fissa dimora, tossicodipendenze. Ho partecipato a corsi di formazione su &quot;Nuove Droghe&quot; e per &quot;Operatori di Strada&quot; organizzati dal <a href="http://www.cnca.it" title="Coordinamento Nazionale Comunit&agrave; di Accoglienza">C.N.C.A.</a>.</p>
-      
-      <p class="label">&nbsp;</p>
-      <p class="content">Mi sono interessato di Economia Solidale all'interno di <a href="http://www.retelilliput.it" title="Attiva il link per visitare il sito">ReteLilliput</a> e Informazione Nonviolenta all'interno di <a href="http://www.peacelink.it" title="Attiva il link per visitare il sito">PeaceLink</a>, in cui ho curato l'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a>. 
-      Ho ricoperto per tre anni la carica di vicepresidente dell'<a href="http://chiodofisso.org" alt="Collegamento al sito dell'associazione">Associazione Chiodofisso</a> di cui sono socio fondatore. Sono attualmente tesoriere e socio fondatore dell'<a href="http://elegarden.org" alt="Collegamento al sito dell'associazione">Associazione Il Giardino degli Elefanti</a>
+      <p class="content">
+        Per molti anni ho dedicato gran parte del mio tempo libero alle attivit&agrave;
+        di volontariato
+        in varie organizzazioni no-profit, in attivit&agrave; rivolte a situazioni
+        di forte emarginazione sociale, carcere, senza fissa dimora, tossicodipendenze.
+        Ho partecipato a corsi di formazione su &quot;Nuove Droghe&quot; e per
+        &quot;Operatori di Strada&quot; organizzati dal <a href="http://www.cnca.it"
+        title="Coordinamento Nazionale Comunit&agrave; di Accoglienza">C.N.C.A.</a>.
       </p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Mi piacciono la <a href="http://last.fm/user/lorello" title="Link esterno alle ultime tracce che ho ascoltato sul mio pc">musica</a> e il cinema d'autore, la <a href="http://www.flickr.com/photos/lorello/" title="Link esterno ai miei ultimi scatti">fotografia</a> e tutti i tipi di cucina che ho avuto modo di conoscere.</p>
+      <p class="content">Mi sono interessato di Economia Solidale all'interno di
+        <a href="http://www.retelilliput.it"
+        title="Attiva il link per visitare il sito">ReteLilliput</a> e Informazione
+        Nonviolenta all'interno di <a href="http://www.peacelink.it"
+        title="Attiva il link per visitare il sito">PeaceLink</a>, in cui ho curato
+        l'area tematica <a href="http://italy.peacelink.org/sociale"
+        title="Attiva il link per visitare il sito">sociale</a> per alcuni anni.
+        Ho ricoperto per tre anni la carica di vicepresidente dell'<a href="http://chiodofisso.org"
+        alt="Collegamento al sito dell'associazione">Associazione Chiodofisso</a> di cui
+        sono socio fondatore. Sono attualmente tesoriere e socio fondatore
+        dell'<a href="http://elegarden.org" alt="Collegamento al sito dell'associazione">
+          Associazione Il Giardino degli Elefanti</a>.
+      </p>
+
+      <p class="label">&nbsp;</p>
+      <p class="content">Mi piacciono la <a href="http://last.fm/user/lorello"
+        title="Link esterno alle ultime tracce che ho ascoltato sul mio pc">musica</a>
+        e il cinema d'autore, la <a href="http://www.flickr.com/photos/lorello/"
+        title="Link esterno ai miei ultimi scatti">fotografia</a> e tutti i tipi di
+        cucina che ho avuto modo di conoscere.
+      </p>
     </div>
 
   </div><!--/section-content-->
