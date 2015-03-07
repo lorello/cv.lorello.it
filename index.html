@@ -8,13 +8,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="ROBOTS" content="INDEX, FOLLOW" />
 		<meta name="revisit-after" content="30 days" />
-		<meta name="copyright" content="Copyright Lorenzo Salvadorini 2005" />
 		<meta http-equiv="Content-Language" content="it" />
 
 <style type="text/css">
 
+hr { width: 60%; }
 body { margin: 0; padding: 0; }
-h1 a { padding-left: 1em; }
+h1 { padding: 0; }
 h2 {  text-align: center; background: #ddd; }
 .note { text-align: center; font-size: .9em; color: #333; font-style: italic; }
 .label {font-weight: bold;}
@@ -22,57 +22,45 @@ h2 {  text-align: center; background: #ddd; }
 
 @media screen 
 {
-    body { font: 80% verdana,helvetica,sans-serif; padding-top: 8em;}
-    h1 { position: fixed; top: 0; left: 0; width: 100%; margin: 0; padding: 1em 0 ; font-size: 1.5em; background: white; font-size: 1.5em; }
-    #wrapper { position: fixed; top: 8em; left:0; overflow: scroll; height: 80%; }
-    .date { width: 700px; clear: both; text-align: right; }
+    body { font: 80% verdana,helvetica,sans-serif; }
+    h1 { margin: 1em 0 1em 1em; font-size: 1.5em; }
+    .notes { width: 700px; clear: both; text-align: right; }
     .section { margin: 1em 0; width: 700px; padding: 10px; clear: both;}
-    h2 { margin: 0; padding: 0; font-size: 1.2em; }
+    h2 { padding: .5em; margin: 0; background: #ddd; font-size: 1.2em; }
     .section-content { width: 100%;}
     .item { margin: 1em 0; border-top: .1em solid #ddd; clear: both; }
     .item:first-child { border-top-width: 0; margin-top: 0; }
 
     .label { clear: left;  float: left; margin: 1em 0 0 0; width: 30%; font-weight: bold; }
     .content { float: left; margin: 1em 0 0 0; width: 70%; }
-    ul { float: left; width: 60%; margin: 0 0 0 32%; background: #fff; 
-        display: inline; /* IE fix for double-float-margin bug */ }
+    ul { float: left; width: 65%; margin: 0 0 0 32%; background: #fff; 
+        display: inline; /* IE Hack for double-float-margin bug */ }
 
     .note { width: 700px; clear: both; padding-top: 2em; }
     a:link, a:visited { color: #000; text-decoration: none; border-bottom: 1px dotted #333; }
     a:hover { border-top: 1px dotted blue; border-bottom: 1px dotted blue; }
     a:focus { border-top: 1px solid yellow; border-bottom: 1px solid yellow;}
     a:focus:hover { background: yellow; }
-
-    /* Navigation menu */
-    #nuota { position: fixed; top: 7em; left: 740px; width: 200px; border-bottom: 5px solid #eee; padding: 5px;}
-    #nuota ul { margin: 0; padding: 0; width: 100%;}
-    #nuota li { display: block; padding: 0; margin: 1px 0; }
-    #nuota li a { display: block; border: 1px solid #ccc; border-left-color: #eee; border-top-color: #eee; background: #eee; }
-    #nuota li a:hover, #nuota li a:focus { color: darkred; border-right-color: darkred; border-bottom-color: darkred; }  
-    #nuota li a:hover:focus { background: darkred; color: #eee; border-right-color: #eee; border-bottom-color: #eee;} 
-    
-    a.surf { display: block; margin: 0; padding: .5em; border: .1em solid #eee; background: #eee;}
-    a.surf:hover, a.surf:focus { background: darkblue !important; color: white; border: .1em solid white !important; }    
 }
 
 @media print 
 {
     body: { font: 10pt georgia, serif; text-align: left;}
     h1 { margin: 1cm 0; font-size: 18pt; }
-    .date { width: 100%; margin: 0; padding: 0; text-align: right; }
+    .notes { width: 100%; margin: 0; padding: 0; text-align: right; }
     h2 { padding: .1cm; margin: 0; background: #ddd; font-size: 14pt; }
     .section { margin: .5cm auto; width: 95%; padding: 0; background: transparent; }
-    .section-content {  }
+    .section-content { }
     .item { margin: 1cm 0; border-top: 1pt solid #ddd; }
     .item:first-child { margin: 0; border-top-width: 0; }
     .label { margin: .2cm 0 0 0; }
     .content { margin: 0 0 0 .5cm; padding: 0; }
 
     ul { background: transparent; margin-left: 1cm; }
+    hr { width: 60%; display: none;}
     .note { width: 100%; clear: both; margin-top: 1cm; }
     a:after { color: #666; font-size: .9em; content: " [" attr(href) "]"; }
     a:link, a:visited { color: #000; text-decoration: none; border-style: none; }
-    #nuota { visibility: hidden;}
 }
 
 </style>
@@ -81,29 +69,22 @@ h2 {  text-align: center; background: #ddd; }
 
 <body>
 
-<div id="nuota">
-<ul>
-<li><a href="#info" title="Salta a questa sezione">Informazioni anagrafiche</a></li>
-<li><a href="#exp" title="Salta a questa sezione">Esperienze</a></li>
-<li><a href="#learn" title="Salta a questa sezione">Formazione</a></li>
-<li><a href="#skill1" title="Salta a questa sezione">Lingue</a></li>
-<li><a href="#skill2" title="Salta a questa sezione">Competenze relazionali</a></li>
-<li><a href="#skill3" title="Salta a questa sezione">Competenze organizzative</a></li>
-<li><a href="#skill4" title="Salta a questa sezione">Competenze tecniche</a></li>
-<li><a href="#skill5" title="Salta a questa sezione">Altre</a></li>
-<li><a href="#extra" title="Salta a questa sezione">Extra</a></li>
-</ul>
-</div>
+<h1>Curriculum Vitae :: Lorenzo Salvadorini</h1>
 
-<h1><a class="surf" name="top">Curriculum Vitae :: Lorenzo Salvadorini</a></h1>
 
-<div id="wrapper">
-<p class="date">ultimo aggiornamento: 15/9/2005<br />
-La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="http://lorello.it/cv.html" title="attiva il link per aprire il CV aggiornato">sito personale</a></p>
+<p class="notes">
+ultimo aggiornamento: 8/12/2012<br />
+La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="http://cv.lorello.it" title="attiva il link per aprire il CV aggiornato">sito personale</a></p>
+
+<p class="notes">
+<a href="http://it.linkedin.com/in/lorello" >
+            <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25_it_IT.png?locale=null" width="160" height="25" border="0" alt="Visualizza il profilo di Lorenzo  Salvadorini su LinkedIn">
+                </a>
+</p>
+
 
 <div class="section">
-  
-  <h2><a class="surf" name="info">Informazioni personali</a></h2>
+  <h2>Informazioni personali</h2>
 
   <div class="section-content">
 
@@ -113,7 +94,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">Lorenzo Salvadorini </p>
 
     <p class="label">Residenza</p>
-    <p class="content">Via Melorie, 79 - 56030 Perignano, Pisa</p>
+    <p class="content">Via del Pretorio 26, 56010 Vicopisano (Pisa)</p>
 
     <p class="label">Data e luogo di nascita</p>
     <p class="content">Nato a Pontedera (Pisa) il 1/9/1976 </p>
@@ -122,7 +103,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">Italiana </p>
 
     <p class="label">Stato civile</p>
-    <p class="content">libero</p>
+    <p class="content">coniugato</p>
 
     <p class="label">Posizione militare</p>
     <p class="content">svolto servizio civile in qualit&agrave; di obiettore di coscienza presso la Comunit&agrave; Aperta Pisana (Lari, Pisa) </p>
@@ -131,7 +112,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">Patente B</p>
 
     <p class="label">Recapiti</p>
-    <p class="content">Email: <a href="mailto:l.salvadorini&#64;altranet.it" title="Attiva il collegamento per scrivermi">l.salvadorini&#64;altranet.it</a> * Tel. 348 7680668</p>
+    <p class="content">Email / GTalk: <a href="mailto:lorello&#64;openweb.it" title="Attiva il collegamento per scrivermi">lorello&#64;openweb.it</a> * skype: <a href="skype:lorenzo.salvadorini?call">lorenzo.salvadorini</a>
+    </p>
 
    </div>
   </div>
@@ -139,17 +121,57 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 <div class="section">
 
-<h2><a class="surf" name="exp">Esperienza lavorativa</a></h2>
+<h2>Esperienza lavorativa</h2>
+
+
+
 
 <div class="section-content">
+
+    <div class="item">
+
+      <p class="label">Da - a</p>
+      <p class="content">Maggio 2007 - Attualmente</p>
+
+      <p class="label">Datore di lavoro</p>
+      <p class="content"><a href="http://www.softecspa.it" title="visita il sito">Softec SpA</a></p>
+
+      <p class="label">Tipo di azienda o settore</p>
+      <p class="content">Societ&agrave; di Servizi Internet</p>
+
+      <p class="label">Tipo di impiego</p>
+      <p class="content">Technology Infrastructure Manager</p>
+
+      <p class="label">Principali mansioni e responsabilit&agrave;</p>
+      <p class="content">Ho ricoperto il ruolo di Area Manager all'interno del gruppo Softec, coordinando l'Area Sistemi cresciuta da 1 a 7 elementi durante la mia attivi&agrave; di coordinamemto, sviluppando progetti in qualit&agrave; di System Architect e collaborando alla gestione dell'Ufficio Acquisti per l'area di mia competenza.</p>
+    </div>
+
+    <div class="item">
+
+      <p class="label">Da - a</p>
+      <p class="content">Marzo 2006 - Maggio 2007</p>
+
+      <p class="label">Datore di lavoro</p>
+      <p class="content"><a href="http://www.softecspa.it" title="visita il sito">Softec SpA</a>, gruppo <a href="http://dada.dada.net" title="visita il sito">Dada</a></p>
+
+      <p class="label">Tipo di azienda o settore</p>
+      <p class="content">Societ&agrave; di Servizi Internet</p>
+
+      <p class="label">Tipo di impiego</p>
+      <p class="content">Senior Webdeveloper</p>
+
+      <p class="label">Principali mansioni e responsabilit&agrave;</p>
+      <p class="content">Ho lavorato come sviluppatore senior su siti web di media e grande complessit&agrave;, elaborando e implementando sistemi per la gestione di contenuti e interfacce da/verso sistemi di terze parti.</p>
+    </div>
+
 
   <div class="item">
 
     <p class="label">Da - a</p>
-    <p class="content">2003-Attualmente attivo</p>
+    <p class="content">2003-2006</p>
 
     <p class="label">Datore di lavoro</p>
-    <p class="content">Coop. Soc. Il Gabbiano a r.l.</p>
+    <p class="content">Coop. Soc. Il Gabbiano a r.l. ONLUS</p>
 
     <p class="label">Tipo di azienda o settore</p>
     <p class="content">Cooperativa Sociale di tipo B</p>
@@ -161,9 +183,9 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <p class="content">Ho lavorato nella divisione IT della cooperativa, divisione costituita nel 2003 su mia iniziativa. Mi sono occupato dello sviluppo di siti Internet per il terzo settore e per le PP.AA., offrendo soluzioni basate su tecnologie moderne e standard internazionali. Ho seguito completamente e sotto ogni aspetto il flusso di lavoro della divisione informatica (progettazione, ricerca fondi, sviluppo, gestione, amministrazione).<br />
        Principali realizzazioni:</p>
 	   <ul>
-		<li><em>(in costruzione)</em> <a href="http://www.valderasociale.it" title="Link esterno al sito">ValderaSociale</a>, sito Internet dei servizi sociali della <a href="http://www.valderassociata.it">Valdera</a>.</li>
-		<li><em>(in costruzione)</em> <a href="http://www.centrorodari.it" title="Link esterno al sito del Centro Rodari">CRED - Centro Rodari</a>, sito Internet del Centro Risorse Educative e Didattiche &quot;Rodari&quot; della <a href="http://www.valderassociata.it" title="Link esterno al sito">Valdera</a>.</li>
-		<li><em>(in costruzione)</em> <a href="http://www.informagiovanivaldera.it" title="Link esterno al sito">Rete Informagiovani</a>, sito Internet della rete degli informagiovani dei 16 Comuni della <a href="http://www.valderassociata.it" title="Link esterno al sito">Valdera</a> (Pisa).</li>
+		<li><a href="http://www.valderasociale.it" title="Link esterno al sito">ValderaSociale</a>, sito Internet dei servizi sociali della <a href="http://www.valderassociata.it">Valdera</a>.</li>
+		<li><a href="http://www.centrorodari.it" title="Link esterno al sito del Centro Rodari">CRED - Centro Rodari</a>, sito Internet del Centro Risorse Educative e Didattiche &quot;Rodari&quot; della <a href="http://www.valderassociata.it" title="Link esterno al sito">Valdera</a>.</li>
+		<li><a href="http://www.informagiovanivaldera.it" title="Link esterno al sito">Rete Informagiovani</a>, sito Internet della rete degli informagiovani dei 16 Comuni della <a href="http://www.valderassociata.it" title="Link esterno al sito">Valdera</a> (Pisa).</li>
 		<li>(2005)<a href="http://www.bhalobasa.it" title="Link esterno al sito dell'Associazione">Bhalobasa</a>, sito dell'omonima associazione.</li>
 		<li>(2004-2005) <a href="http://www.giolli.it" title="Link esterno al sito">sito Internet dell'Associazione Giolli</a> (Livorno), per la quale &agrave; stato realizzato anche un software online per la gestione dei progetti, con rendicontazione degli orari di lavoro dei soci e la prima nota.</li>
 		<li>(2004) sito Internet della <a href="http://pisa.margheritaonline.it" title="Link esterno al sito">Margherita di Pisa</a>.</li>
@@ -197,7 +219,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
     <div class="item">
       <p class="label">Da - a</p>
-      <p class="content">Gennaio 2005 - Attualmente attivo</p>
+      <p class="content">Gennaio 2005 - Giugno 2005</p>
 
       <p class="label">Datore di lavoro</p>
       <p class="content">Giolli - Teatro dell'Oppresso</p>
@@ -215,7 +237,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
     <div class="item">
       <p class="label">Da - a</p>
-      <p class="content">Settembre 2004 - Attualmente attivo</p>
+      <p class="content">Settembre 2004 - Settembre 2006</p>
 
       <p class="label">Datore di lavoro</p>
       <p class="content">Studio Commerciale Bisaro-Orazzini</p>
@@ -273,7 +295,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Aprile 2003 - Agosto 2003</p>
 
       <p class="label">Datore di lavoro</p>
-      <p class="content">Centro nuovo modello di sviluppo - Vecchiano, Pisa</p>
+      <p class="content"><a href="http://www.cnms.it" title="visita il sito">Centro nuovo modello di sviluppo</a> - Vecchiano, Pisa</p>
 
       <p class="label">Tipo di azienda o settore</p>
       <p class="content">Centro di ricerca</p>
@@ -308,7 +330,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Aprile 1997 - Dicembre 1998</p>
 
       <p class="label">Datore di lavoro</p>
-      <p class="content">Il Delfino csrl - Lari, Pisa</p>
+      <p class="content">Coop. Soc. Il Delfino a r.l. ONLUS - Lari, Pisa</p>
 
       <p class="label">Tipo di azienda o settore</p>
       <p class="content">Cooperativa Sociale di tipo A: servizi per minori e anziani</p>
@@ -327,8 +349,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 
 <div class="section">
-  
-  <h2><a class="surf" name="learn">Formazione</a></h2>
+
+  <h2>Formazione</h2>
 
   <div class="section-content">
 
@@ -357,7 +379,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 <div class="section">
 
-  <h2><a class="surf" name="skill1">Capacit&agrave; e competenze personali</a></h2>
+  <h2>Capacit&agrave; e competenze personali</h2>
 
  <div class="section-content">
 
@@ -379,8 +401,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 
 <div class="section">
-  
-  <h2><a class="surf" name="skill2">Capacit&agrave; e competenze relazionali</a></h2>
+
+  <h2>Capacit&agrave; e competenze relazionali</h2>
 
   <div class="section-content">
 
@@ -390,10 +412,12 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Nel mio lavoro presso la Coop. Il Delfino ho gestito rapporti con la Pubblica Amministrazione, nostro principale committente, con i fornitori e con il personale della cooperativa.</p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Nella mia attivit&agrave; di Web Designer e sviluppatore, sia da consulente che presso la Coop. Il Gabbiano, ho partecipato attivamente alla comunit&agrave; di sviluppatori di alcuni software opensource (Postnuke, PhPeace) ed ho realizzato diversi siti web all'interno di gruppi di lavoro geograficamente distributi, acquisendo capacit&agrave; di dialogo e interazione con strumenti di comunicazione online (<abbr title="Concurrent Versioning System">cvs</abbr>, chat, e-mail, voip)</p>
+      <p class="content">Nella mia attivit&agrave; di Web Designer e sviluppatore, sia da consulente che presso la Coop. Il Gabbiano, ho partecipato attivamente alla comunit&agrave; di sviluppatori di alcuni software opensource (Postnuke, PhPeace) ed ho realizzato diversi siti web all'interno di gruppi di lavoro geograficamente distributi, acquisendo capacit&agrave; di dialogo e interazione con strumenti di collaborazione online (<abbr title="Concurrent Versioning System">cvs</abbr>/subversion, wiki, chat, e-mail, voip)</p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Ho svolto numerose attivit&agrave; di volontariato in organizzazioni di livello locale e nazionale, partecipando a gruppi di lavoro e attivit&agrave; di e-campaigning. Sono stato per due annoi referente del nodo di Pisa di ReteLilliput, esperienza che ha accresciuto le mie capacit&agrave; di ascolto, analisi e sintesi.</p>
+      <p class="content">Ho svolto numerose attivit&agrave; di volontariato in organizzazioni di livello locale e nazionale, partecipando a gruppi di lavoro e attivit&agrave; di e-campaigning e mediattivismo. Sono stato per due anni referente del nodo di Pisa di ReteLilliput, esperienza che ha accresciuto le mie capacit&agrave; di ascolto, analisi e sintesi. 
+      
+      </p>
     </div>
 
   </div>
@@ -406,8 +430,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 
 <div class="section">
-  
-  <h2><a class="surf" name="skill3">Capacit&agrave; e competenze organizzative</a></h2>
+
+  <h2>Capacit&agrave; e competenze organizzative</h2>
 
   <div class="section-content">
 
@@ -423,7 +447,7 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       <p class="content">Tra le attivit&agrave; che ho svolto nel campo del volontariato, ho partecipato dal 1991 al 2004 allo staff tecnico dell'iniziativa &quot;Accendi una stella, spegni la droga&quot;, una campagna di raccolta fondi per la Comunit&agrave; Aperta Pisana (Chianni, Pisa) che coinvolge un pool di oltre 150 volontari distribuiti sulle Province di Pisa, Livorno e Firenze</p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">Come socio dell'Associazione di volontariato telematico PeaceLink coordino le attivit&agrave; redazionali dell'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a></p>
+      <p class="content">Come socio dell'Associazione di volontariato telematico PeaceLink ho coordinato le attivit&agrave; redazionali dell'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a></p>
 
     </div>
 
@@ -434,8 +458,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 
 <div class="section">
-  
-  <h2><a class="surf" name="skill4">Capacit&agrave; e competenze tecniche</a></h2>
+
+  <h2>Capacit&agrave; e competenze tecniche</h2>
 
   <div class="section-content">
 
@@ -449,7 +473,10 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
       Capacit&agrave; di composizione e impaginazione con software di Desktop Publishing (Corel Draw, PageMaker).</p>
 
       <p class="label">Linguaggi conosciuti</p>
-      <p class="content">X-Html (Ottimo), Css (Ottimo), PHP (Ottimo), Javascript (discreto), MySql (Buono), Perl (Buono), Shell scripting (Sufficiente), C (Sufficiente), Java (Sufficiente).</p>
+      <p class="content">X-Html (Ottimo), Css (Ottimo), PHP (Ottimo), Javascript (discreto), MySql (Buono), Perl (Buono), Shell scripting (Ottimo), C (Sufficiente), Java (Sufficiente).</p>
+
+      <p class="label">Framework e Strumenti</p>
+      <p class="content">Ho accumulato negli anni una vasta esprienza nell'utilizzo di prodotti opensource per il web, dagli strumenti di produttivit&agrave; ai sistemi di Trouble Ticketing, dai Content Manager ai sistemi di Groupware. In particolare ho un'ottima conoscenza di <a href="http://www.phpeace.org" title="Visita il sito">PhPeace</a> e ho avuto modo di apprezzare le qualit&agrave; del sistema di gestione documentale <a href="http://www.alfresco.org" title="Visita il sito">Alfresco</a> e del sistema editoriale <a href="http://ez.no" title="Visita il sito">EzPublish</a>. Tra i sistemi per la realizzazione di community ho usato con soddisfazione <a href="http://www.elgg.org" title="Visita il sito">ELGG</a>, di cui seguo tuttora lo sviluppo. Dal 2006 ho iniziato a sperimentare lo sviluppo con i moderni framework <abbr title="Model-View-Controller">MVC</abbr>, tra questi ho usato <a href="http://www.cakephp.org" title="Visita il sito">CakePhp</a>, ma la mia attenzione &egrave; stata attratta principalmente da <a href="http://www.symfony-project.org" title="Visita il sito">Symfony</a>.</p>
 
     </div>
 
@@ -458,16 +485,18 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
     <div class="item">
 
       <p class="label">Competenze sistemistiche</p>
-      <p class="content">installazione e configurazione di hardware e software;</p>
+      <p class="content">esperienza nella realizzazione di sistemi in alta affidabilit&agrave; e atti a garantire alte performance (cluster fino a 16 nodi). Conoscenza dei sistemi di virtualizzazione di classe Enterprise basati su <a href="http://vmware.com/products/vi/" title="Visita il sito">Vmware</a> e <a href="http://www.xen.org/" title="Visita il sito">Xen</a>; 
+      esperienza nella progettazione di rete in datacenter con apparati <a href="http://www.cisco.com" title="Visita il sito">Cisco</a>; esperienza nell'utilizzo di storage di rete con tecnologia iSCSI.
+      </p>
 
       <p class="label">&nbsp;</p>
       <p class="content">realizzazione di reti locali e wireless basate su protocollo TCP/IP e implementazione di servizi di File server, Print server, Calendar Sharing, Backup centralizzato;</p>
 
       <p class="label">&nbsp;</p>
-      <p class="content">conoscenza ed esperienza nella gestione di servizi Internet: web server (Apache), mailserver (SendMail), firewall (IpTables).</p>
+      <p class="content">conoscenza ed esperienza nella gestione di servizi Internet: webserver, mailserver, sistemi di provisioning, monitoring e analisi dei log.</p>
 
       <p class="label">Piattaforme conosciute</p>
-      <p class="content">Windows, SuSE, RedHat.</p>
+      <p class="content">Oltre a una conoscenza generica delle principali piattaforme server del mondo Linux e Windows, conosco in modo approfondito i servizi di directory Windows e le problematiche di integrazione con sistemi eterogenei. Tra le distribuzioni linux prediligo le <em>debian-based</em> e utilizzo in modo preponderante <a href="http://www.ubuntu.org">Ubuntu</a>.</p>
 
     </div>
 
@@ -477,17 +506,17 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 
 <div class="section">
-  
-  <h2><a class="surf" name="skill5">Altre capacit&agrave; e competenze</a></h2>
+
+  <h2>Altre capacit&agrave; e competenze</h2>
 
   <div class="section-content">
 
     <div class="item">
       <p class="label">&nbsp;</p>
-      <p class="content">Mi sto interessando al tema dell'<strong lang="en">Information Architecture</strong>, al problema della classificazione e al <strong lang="en">Semantic-Web</strong>. Sto approfondendo per questo l'uso delle Ontologie in ambito informatico soprattuto in rapporto alla recente diffusione di servizi di <em lang="en">social networking</em> basati sulle <strong lang="en">Folksonomies</strong>.<br />
+      <p class="content">In occasione di alcuni progetti, in cui ho dovuto trattare una grande mole di dati, mi sono appassionato al tema dell'<a href="http://it.wikipedia.org/wiki/Architettura_dell'informazione" title="Leggi la definizione di Wikipedia"><strong lang="en">Information Architecture</strong></a>, al problema della classificazione e al <a href="http://it.wikipedia.org/wiki/Web_semantico" title="Leggi la definizione su Wikipedia"><strong lang="en">Semantic-Web</strong></a>. Sto approfondendo per questo l'uso delle <a href="http://it.wikipedia.org/wiki/Ontologia_(Informatica)" title="Leggi la definizione su Wikipedia">Ontologie</a> in ambito informatico soprattuto in rapporto alla recente diffusione di servizi di <strong lang="en">social networking</strong> basati sulle <strong lang="en">Folksonomies</strong>.<br />
       Esperienza nell'adozione di <strong>software libero</strong> in sostituzione di software proprietario.<br />
-      Partecipazione al <a href="http://salpa.pisa.it" title="Attiva il link per aprire il sito del convengno">Convegno nazionale Forum SALPA</a>, &quot;Sapere Aperto e Libero nella Pubblica Amministrazione&quot;, sull'adozione del software <span lang="en">OpenSource</span> nella Pubblica Amministrazione (Pisa, 22-23 Marzo 2004).</p>
-      
+      Partecipazione al <a href="http://salpa.pisa.it" title="Attiva il link per aprire il sito del convengno">Convegno nazionale Forum SALPA</a>, &quot;Sapere Aperto e Libero nella Pubblica Amministrazione&quot;, sull'adozione del software <span lang="en">OpenSource</span> nella Pubblica Amministrazione (Pisa, 22-23 Marzo 2004).<br />
+      A seguito dell'esperienza maturata nel campo della virtualizzazione in datacenter, sto studiando le tecnologie di <a href="http://it.wikipedia.org/wiki/Cloud_computing" title="Leggi la definizione su Wikipedia">Cloud computing</a></p>
     </div>
 
   </div>
@@ -498,17 +527,21 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 <div class="section">
 
-  <h2><a class="surf" name="extra">Altri interessi</a></h2>
+  <h2>Altri interessi</h2>
 
   <div class="section-content">
 
     <div class="item">
       <p class="label">&nbsp;</p>
       <p class="content">Dedico gran parte del mio tempo libero alle attivit&agrave; di volontariato in varie organizzazioni no-profit, in attivit&agrave; rivolte a situazioni di forte emarginazione sociale, carcere, senza fissa dimora, tossicodipendenze. Ho partecipato a corsi di formazione su &quot;Nuove Droghe&quot; e per &quot;Operatori di Strada&quot; organizzati dal <a href="http://www.cnca.it" title="Coordinamento Nazionale Comunit&agrave; di Accoglienza">C.N.C.A.</a>.</p>
+      
       <p class="label">&nbsp;</p>
-      <p class="content">Adesso mi interesso prevalentemente di Economia Solidale all'interno di <a href="http://www.retelilliput.it" title="Attiva il link per visitare il sito">ReteLilliput</a> e Informazione Nonviolenta all'interno di <a href="http://www.peacelink.it" title="Attiva il link per visitare il sito">PeaceLink</a>, in cui curo l'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a>.</p>
+      <p class="content">Mi sono interessato di Economia Solidale all'interno di <a href="http://www.retelilliput.it" title="Attiva il link per visitare il sito">ReteLilliput</a> e Informazione Nonviolenta all'interno di <a href="http://www.peacelink.it" title="Attiva il link per visitare il sito">PeaceLink</a>, in cui ho curato l'area tematica <a href="http://italy.peacelink.org/sociale" title="Attiva il link per visitare il sito">sociale</a>. 
+      Ho ricoperto per tre anni la carica di vicepresidente dell'<a href="http://chiodofisso.org" alt="Collegamento al sito dell'associazione">Associazione Chiodofisso</a> di cui sono socio fondatore. Sono attualmente tesoriere e socio fondatore dell'<a href="http://elegarden.org" alt="Collegamento al sito dell'associazione">Associazione Il Giardino degli Elefanti</a>
+      </p>
+
       <p class="label">&nbsp;</p>
-      <p class="content">Mi piacciono la <a href="http://lorello.it/hello/indices/index_463.html" title="Link esterno alle ultime tracce che ho ascoltato sul mio pc">musica</a> e il cinema d'autore, la <a href="http://lorello.it/hello/indices/index_464.html" title="Link esterno ai miei ultimi scatti">fotografia</a> e tutti i tipi di cucina che ho avuto modo di conoscere.</p>
+      <p class="content">Mi piacciono la <a href="http://last.fm/user/lorello" title="Link esterno alle ultime tracce che ho ascoltato sul mio pc">musica</a> e il cinema d'autore, la <a href="http://www.flickr.com/photos/lorello/" title="Link esterno ai miei ultimi scatti">fotografia</a> e tutti i tipi di cucina che ho avuto modo di conoscere.</p>
     </div>
 
   </div><!--/section-content-->
@@ -518,6 +551,6 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
 <p class="note">Autorizzo la raccolta e il trattamento dei dati personali contenuti in questo curriculum vitae ai sensi del D.Lgs 196/03</p>
 
-</div>
+
 </body>
 </html>
