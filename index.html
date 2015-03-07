@@ -45,7 +45,7 @@ h2 {  text-align: center; background: #ddd; }
 
 @media print
 {
-    body: { font: 10pt georgia, serif; text-align: left;}
+    body: { font: 8pt georgia, serif; text-align: left;}
     h1 { margin: 1cm 0; font-size: 18pt; }
     .notes { width: 100%; margin: 0; padding: 0; text-align: right; }
     h2 { padding: .1cm; margin: 0; background: #ddd; font-size: 14pt; }
@@ -168,21 +168,22 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
              exchange/zimbra a Google Apps for Work;</li>
            <li>
              introduzione di un sistema di trouble-ticketing e di gestione progetti
-             software basata su wiki.(2007);</li>
+             software basata su wiki e svn.(2007);</li>
            <li>
              introduzione di <a href="https://puppetlabs.com/">Puppet</a> come strumento
              di gestione dell'infrastruttura e successivamente per la realizzazione
              degli ambienti di sviluppo personali con Vagrant (2009);</li>
            <li>
              realizzazione nuova infrastruttura ridondata di hosting per gli applicativi
-             dell'azienda, con self-provisioning da parte dei distinti team di sviluppo e
-             sistema di charge-back per la gestione dei costi di hosting
+             dell'azienda, con <em>self-provisioning</em> da parte dei distinti team di sviluppo e
+             sistema di <em>charge-back</em> per la gestione dei costi di hosting
              sulle commesse a ricavo dell'azienda.(2008-2010);</li>
            <li>
              progettazione e realizzazione di cluster in cloud con scalabilità automatica
              in base al traffico in ingresso (2011);</li>
            <li>
-             gestione del parco client dell'azienda, costituito da circa 150 postazioni
+             gestione del parco client dell'azienda e del servizio di assistenza agli
+             utenti interni, costituito da circa 150 postazioni
              e circa 250 device mobili;</li>
            <li>
              progetto <a href="http://www.43folders.com/izero">Inbox Zero</a>: realizzazione
@@ -587,72 +588,73 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
 
     <div class="item">
 
-      <p class="label">Competenze software</p>
-      <p class="content">Ho maturato esperienza nella realizzazione di siti web ad alta <strong>accessibilit&agrave;</strong>: conosco le Linee Guida del W3C (WCAG), la normativa italiana e ho padronanza delle tecniche per migliorare l'accessibilit&agrave; di siti esistenti. Ho acquisito una buona padronanza delle tecniche per aumentare l'<strong>usabilit&agrave;</strong> dei siti Internet: cura del micro-content, Ajax, etc.<br />
-      Ho partecipato al Convegno nazionale <a href="http://accessibility.comune.prato.it" title="Attiva il link per visitare il sito del convegno">Web senza barriere</a>, giornata di studio sulla accessibilit&agrave; dei siti Internet per la Pubblica Amministrazione (Prato, 1 Dicembre 2003) e al Convegno &quot;Progettazione del Web, Enti locali e piena accessibilit&agrave;&quot; dell'informazione&quot; (Capannoli, Pisa, 26 Marzo 2004).<br />
-      Ho acquisito anche competenza nel campo dei progetti di <strong>E-Government</strong> per la Pubblica Amministrazione.<br /><br />
-      Esperienza nella progettazione e nello sviluppo di database su piattaforma FileMaker.<br /><br />
-      Capacit&agrave; di composizione e impaginazione con software di Desktop Publishing (Corel Draw, PageMaker).</p>
+      <p class="label">System Administrator</p>
+      <p class="content">
+        Esperienza nella realizzazione di sistemi in alta affidabilit&agrave; e atti
+        a garantire alte performance e tolleranza a ogni tipo di guasto.<br />
+        Ho progettato e configurato con <a href="http://puppetlabs.com" title="Link esterno">Puppet</a> gli stack LAMP,
+        Java (Tomcat, Jetty), Ruby on Rails, NodeJs, con datatabase Mysql
+        (con replica Master-Slave e Multi-Master), MongoDB.<br />
+        Ho affiancato le aree di sviluppo nell'adozione di sistemi per
+        accrescere la scalabilità delle applicazioni usando Memcache, Redis, Varnish
+        e CloudFlare.</p>
 
-      <p class="label">Linguaggi conosciuti</p>
-      <p class="content">X-Html (Ottimo), Css (Ottimo), PHP (Ottimo), Javascript (discreto), MySql (Buono), Perl (Buono), Shell scripting (Ottimo), C (Sufficiente), Java (Sufficiente).</p>
-
-      <p class="label">Framework e Strumenti</p>
-      <p class="content">Ho accumulato negli anni una vasta esprienza nell'utilizzo di prodotti opensource per il web, dagli strumenti di produttivit&agrave; ai sistemi di Trouble Ticketing, dai Content Manager ai sistemi di Groupware. In particolare ho un'ottima conoscenza di <a href="http://www.phpeace.org" title="Visita il sito">PhPeace</a> e ho avuto modo di apprezzare le qualit&agrave; del sistema di gestione documentale <a href="http://www.alfresco.org" title="Visita il sito">Alfresco</a> e del sistema editoriale <a href="http://ez.no" title="Visita il sito">EzPublish</a>. Tra i sistemi per la realizzazione di community ho usato con soddisfazione <a href="http://www.elgg.org" title="Visita il sito">ELGG</a>, di cui seguo tuttora lo sviluppo. Dal 2006 ho iniziato a sperimentare lo sviluppo con i moderni framework <abbr title="Model-View-Controller">MVC</abbr>, tra questi ho usato <a href="http://www.cakephp.org" title="Visita il sito">CakePhp</a>, ma la mia attenzione &egrave; stata attratta principalmente da <a href="http://www.symfony-project.org" title="Visita il sito">Symfony</a>.</p>
-
-    </div>
-
-
-
-    <div class="item">
-
-      <p class="label">Competenze sistemistiche</p>
-      <p class="content">esperienza nella realizzazione di sistemi in alta affidabilit&agrave; e atti a garantire alte performance (cluster fino a 16 nodi). Conoscenza dei sistemi di virtualizzazione di classe Enterprise basati su <a href="http://vmware.com/products/vi/" title="Visita il sito">Vmware</a> e <a href="http://www.xen.org/" title="Visita il sito">Xen</a>;
-      esperienza nella progettazione di rete in datacenter con apparati <a href="http://www.cisco.com" title="Visita il sito">Cisco</a>; esperienza nell'utilizzo di storage di rete con tecnologia iSCSI.
+      <p class="label">Strumenti</p>
+      <p class="content">
+        In datacenter ho usato con successo:
+        <ul>
+          <li>sistemi di virtualizzazione opensource come <strong>Xen</strong> e
+            <strong>KVM</strong> e sistemi commerciali come <strong>XenServer</strong> e VMWare;</li>
+          <li>sistemi per la gestione dei container Docker opensource Octohost e Flynn</li>
+          <li>storage appliance Open-E, sistemi di storage iSCSI Emc2 e NAS <strong>NetApp</strong>;</li>
+          <li>firewall e switch L3 <strong>Cisco</strong>;<li>
+          <li>server rack Dell e <strong>HP BladeCenter</strong>;</li>
+          <li>software di bilanciamento <strong>HAProxy</strong> e <a href="http://www.linuxvirtualserver.org/">LVS</a>;
+          <li>sistemi di monitoraggio come Nagios, Newrelic e Datadog</li>
+          <li>software per l'aggregazione dei log Logstash e Fluentd</li>
+        </ul>
       </p>
 
-      <p class="label">&nbsp;</p>
-      <p class="content">realizzazione di reti locali e wireless basate su protocollo TCP/IP e implementazione di servizi di File server, Print server, Calendar Sharing, Backup centralizzato;</p>
-
-      <p class="label">&nbsp;</p>
-      <p class="content">conoscenza ed esperienza nella gestione di servizi Internet: webserver, mailserver, sistemi di provisioning, monitoring e analisi dei log.</p>
-
-      <p class="label">Piattaforme conosciute</p>
-      <p class="content">Oltre a una conoscenza generica delle principali piattaforme server del mondo Linux e Windows, conosco in modo approfondito i servizi di directory Windows e le problematiche di integrazione con sistemi eterogenei. Tra le distribuzioni linux prediligo le <em>debian-based</em> e utilizzo in modo preponderante <a href="http://www.ubuntu.org">Ubuntu</a>.</p>
+      <p class="label">Cloud computing</p>
+      <p class="content">
+        Ho usato i servizi di IaaS di Amazon Web Services,
+        Linode, Digital Ocean e ho deployato software sulle PaaS
+        DotCloud, Pagodabox, Fortrabbit.
+      </p>
 
     </div>
 
-  </div><!--/section-content-->
-
-</div><!--/section-->
-
-
-<div class="section">
-
-  <h2>Altre capacit&agrave; e competenze</h2>
-
-  <div class="section-content">
-
-    <div class="item">
-      <p class="label">&nbsp;</p>
-      <p class="content">In occasione di alcuni progetti, in cui ho dovuto trattare
-        una grande mole di dati, mi sono appassionato al tema
+      <p class="label">Competenze software</p>
+      <p class="content">
+        Oltre allo Shell Scripting, marchio distintivo del SysOp, ho incrociato
+        diversi linguaggi moderni usati sul web (Ruby, Python, Javascript, Java),
+        ma quello su cui ho le maggiori competenze &egrave; <strong>PHP</strong>,
+        di cui ho usato numerosi software di gestione contenuti (CMS),
+        gestionali e sistemi di trouble ticketing.<br />
+        Conosco il framework <a href="http://symfony.com/" title="Visita il sito di Symfony">Symfony</a>
+        e ho lavorato in particolare con il microframework <a href="http://silex.sensiolabs.org/"
+        title="Dai un'occhiata a Silex, te ne innamorerai!">Silex</a>,
+        con il quale ho realizzato diversi <em>command-line tool</em> e piccole API per l'integrazione
+        di diversi sistemi aziendali.<br />
+        <br />
+        Nei primi anni di attività ho maturato esperienza nella realizzazione di siti web
+        ad alta <strong>accessibilit&agrave;</strong>, conosco le Linee Guida del W3C (WCAG)
+        e per questo ho approfondito molto la mia conoscenza di Html e CSS.<br />
+        In occasione di alcuni progetti, in cui ho dovuto trattare
+        grandi molti di dati, mi sono appassionato al tema
         dell'<a href="http://it.wikipedia.org/wiki/Architettura_dell'informazione"
         title="Leggi la definizione di Wikipedia"><strong lang="en">Information Architecture</strong></a>,
         al problema della classificazione e al <a href="http://it.wikipedia.org/wiki/Web_semantico"
         title="Leggi la definizione su Wikipedia"><strong lang="en">Semantic-Web</strong></a>.
-        Sto approfondendo per questo l'uso delle
-        <a href="http://it.wikipedia.org/wiki/Ontologia_(Informatica)" title="Leggi la definizione su Wikipedia">Ontologie</a>
-        in ambito informatico soprattuto in rapporto alla recente diffusione di servizi di <strong lang="en">social networking</strong> basati sulle <strong lang="en">Folksonomies</strong>.<br />
-      Esperienza nell'adozione di <strong>software libero</strong> in sostituzione di software proprietario.<br />
-      Partecipazione al <a href="http://salpa.pisa.it" title="Attiva il link per aprire il sito del convengno">Convegno nazionale Forum SALPA</a>, &quot;Sapere Aperto e Libero nella Pubblica Amministrazione&quot;, sull'adozione del software <span lang="en">OpenSource</span> nella Pubblica Amministrazione (Pisa, 22-23 Marzo 2004).<br />
-      A seguito dell'esperienza maturata nel campo della virtualizzazione in datacenter, sto studiando le tecnologie di <a href="http://it.wikipedia.org/wiki/Cloud_computing" title="Leggi la definizione su Wikipedia">Cloud computing</a></p>
+      </p>
+
     </div>
 
-  </div>
 
-</div>
 
+  </div><!--/section-content-->
+
+</div><!--/section-->
 
 
 <div class="section">
@@ -684,7 +686,8 @@ La versione aggiornata del mio CV &egrave; sempre disponibile sul mio <a href="h
         Ho ricoperto per tre anni la carica di vicepresidente dell'<a href="http://chiodofisso.org"
         alt="Collegamento al sito dell'associazione">Associazione Chiodofisso</a> di cui
         sono socio fondatore. Sono attualmente tesoriere e socio fondatore
-        dell'<a href="http://elegarden.org" alt="Collegamento al sito dell'associazione">
+        dell'<a href="http://ilgiardinodeglielefanti.org"
+        alt="Collegamento esterno al sito dell'associazione">
           Associazione Il Giardino degli Elefanti</a>.
       </p>
 
