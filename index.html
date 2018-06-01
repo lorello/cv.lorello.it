@@ -143,8 +143,8 @@ e su <a href="http://it.linkedin.com/in/lorello">LinkedIn</a>.
       <p class="label">Principali mansioni e responsabilità</p>
       <p class="content">
 	      Gestione ordinaria dei sistemi e del delivery
-	      della piattaforma Volare in Public Clouds (AWS) e in datacenter privati
-	      dei clienti che optano per soluzione <i>on premise</i>.<br />
+	      della piattaforma <a href="https://cloud4wi.com/introducing-volare-advanced-guest-wi-fi-platform/">Volare</a> in Public Clouds (AWS) e in datacenter privati
+	      dei clienti che optano per la soluzione <i>on premise</i>.<br />
 	      <br />
 	      Affianco il team di sviluppo nella progettazione Architetturale del prodotto
 	      in particolare per l'evoluzione del prodotto in termini di affidabilità, scalabilità,
@@ -153,20 +153,33 @@ e su <a href="http://it.linkedin.com/in/lorello">LinkedIn</a>.
 	      Le principali attività di cui mi sono occupato:
             <ul>
               	<li>
-			rivisitazione del processo di delivery: adozione di Docker per il delivery 
-			di tutti i componenti della piattaforma, riorganizzazione del codice sorgente,
-			centralizzazione delle configurazioni su Consul e del logging su CloudWatch
+			rivisitazione del processo di delivery: 
+			adozione di Docker per il delivery di tutti i componenti della piattaforma, 
+			riorganizzazione del codice sorgente, centralizzazione delle configurazioni su
+			<a href="https://consul.io">Consul</a> e del logging su 
+			<a href="https://aws.amazon.com/documentation/cloudwatch/">CloudWatch</a>; 
+			supporto alla creazione di Dockerfile 
+			<i>production-ready</i> per i differenti linguaggi in uso (PHP, Java, Golang, 
+			Python, NodeJS, Ruby)
 		</li>
 		<li>
-			creazione di una pipeline per l'aggiornamento automatico delle immagini Docker
-			ad ogni merge su un branch predefinito mediante GitLab, esecuzione di test 
-			automatici di tutte le API mediante NewMan e deploy in ambiente di test mediante
+			creazione di una pipeline di CI/CD: build automatico delle immagini Docker
+			per branch e per versione mediante GitLab, esecuzione di test 
+			automatici sulle API mediante <a href="https://github.com/postmanlabs/newman">NewMan</a>
+			e deploy in ambiente di test mediante
 			docker-compose.
 		</li>
 		<li>
 			creazione di un sistema di telemetria della piattaforma in grado di rilevare
-			anomalie e esaurimento di risorse in tempo reale (tools utilizzati StatsD, Graphite
-			Grafana, Collectd, Logstash, Bash scripting)
+			anomalie nell'uso di risorse in tempo reale utilizzando lo stack StatsD, Graphite
+			Grafana, Collectd, LogStash.
+		</li>
+		<li>
+			supporto per i processi di Machine-learning: creazione mediante FileBeat e LogStash di 
+			una data-pipeline per l'estrazione delle <i>feature</i> da basi di dati eterogenee e 
+			dati semi-strutturati (MySQL, MongoDB, S3, ElasticSearch); introduzione di 
+			<a href="https://airflow.apache.org/">Airflow</a> per 
+			la gestione dei processi batch (training dei modelli e esecuzione predizioni). 
 		</li>
 	    </ul>
         </p>
@@ -189,8 +202,7 @@ e su <a href="http://it.linkedin.com/in/lorello">LinkedIn</a>.
       <p class="label">Principali mansioni e responsabilità</p>
       <p class="content">Ho ricoperto il ruolo di Responsabile dell'Area Sistemi
         all'interno del gruppo Softec, riportando direttamente al CEO e coordinando
-        il team dei sistemisti che io stesso ho costituito e che ha raggiunto 7
-        elementi durante la mia attività.<br />
+        il team dei sistemisti (7-9 persone).<br />
         <br />
         Le principali attività di cui mi sono occupato:
          </p><ul>
@@ -242,7 +254,7 @@ e su <a href="http://it.linkedin.com/in/lorello">LinkedIn</a>.
             <li>
              progetto di migrazione dei servizi di base del datacenter (DNS, NTP, Apt-Cache, Nagios)
              verso container <a href="http://www.docker.com/">Docker</a> con deploy
-             basato su GIT (2014-2015);</li>
+             basato su GIT push (2014-2015);</li>
          </ul>
     </div>
 
